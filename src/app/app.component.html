@@ -1,7 +1,16 @@
-<div class=".container">
-    <div class="row">
-      <div class=".col-md-12">
-        <h2>I'm here!!</h2>
-      </div>
-    </div>
-</div>
+<!-- app.component.html -->
+<mat-sidenav-container style="height: 100%;">
+  <mat-sidenav mode="side" opened="true" style="width: 200px;">
+    <!-- Sidebar content goes here -->
+
+      <a mat-list-item routerLink="/">Home</a>
+      <a mat-list-item routerLink="/dashboard">Dashboard</a>
+      <!-- Add more links as needed -->
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Main content goes here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
