@@ -8,3 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'schoolmanagmentng';
 }
+
+
+https://github.com/thisiszoaib/angular-responsive-sidebar/blob/master/src/app/app.component.ts
