@@ -9,10 +9,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIcon } from '@angular/material/icon';
 import { MatToolbar} from '@angular/material/toolbar';
+import { MaterialModule } from './material-module';
+
+import { MenubarComponent } from './sidebar/menubar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenubarComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ import { MatToolbar} from '@angular/material/toolbar';
     MatSidenavModule,
     MatListModule,
     MatIcon,
-    MatToolbar
+    MatToolbar,
+    MaterialModule
+        
 
   ],
   providers: [],
