@@ -12,6 +12,7 @@ import { MatToolbar} from '@angular/material/toolbar';
 import { MaterialModule } from './material-module';
 
 import { MenubarComponent } from './sidebar/menubar.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MenubarComponent } from './sidebar/menubar.component';
     MatListModule,
     MatIcon,
     MatToolbar,
-    MaterialModule
+    MaterialModule,
+    StoreModule.forRoot({}, {})
         
 
   ],
