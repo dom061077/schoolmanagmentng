@@ -35,13 +35,13 @@ export class AuthService {
   signup(email: string, password: string) {
     return this.http
       .post<AuthResponseData>(
-        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key='// +
+        'http://localhost:8080/api/v1/auth/register'// +
         // environment.firebaseAPIKey
         ,
         {
           email: email,
           password: password,
-          returnSecureToken: true
+          
         }
       )
       .pipe(

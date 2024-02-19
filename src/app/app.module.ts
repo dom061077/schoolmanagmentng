@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -25,6 +26,7 @@ import { StoreModule } from '@ngrx/store';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
+    HttpClientModule,
     MatIcon,
     MatToolbar,
     MaterialModule,

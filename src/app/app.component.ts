@@ -18,7 +18,7 @@ export class AppComponent {
   constructor(private observer: BreakpointObserver, private router: Router) {}
 
   ngAfterViewInit() {
-    this.observer
+    /*this.observer
       .observe(['(max-width: 800px)'])
       .pipe(delay(1), untilDestroyed(this))
       .subscribe((res) => {
@@ -40,7 +40,7 @@ export class AppComponent {
         if (this.sidenav.mode === 'over') {
           this.sidenav.close();
         }
-      });
+      });*/
   }
 }
 
